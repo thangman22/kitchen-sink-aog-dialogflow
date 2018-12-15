@@ -13,6 +13,7 @@ I want to start this project because I did a lot of Action on google session I'm
 * Setup Dialogflow account create intent and import intent ZIP file. 
 * [Create Firebase Project](https://firebase.google.com/)
 * Setup Firebase project in local then add Cloud function to project.
+* rename config.sample.json to config.json and replace client_id by follow [this guide](https://developers.google.com/actions/identity/google-sign-in) 
 * Serve Cloud Function for firebase in local with command `yarn serve`.
 * start ngrok with command `ngrok http 5000`.
 * Setup "Fullfillment" in Dialogflow.

@@ -1,7 +1,9 @@
 
 exports.confirmPermission = (conv, _, confirmationGranted) => {
   let confirm = confirmationGranted ? 'Granted' : 'Denied'
-  conv.ask(conv.user.name.display + ' was ' + confirm)
+  // ID for notification
+  console.log(conv.user.id)
+  conv.ask('User was ' + confirm)
 }
 
 exports.confirmDatePermission = (conv, _, confirmationGranted) => {
