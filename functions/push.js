@@ -13,7 +13,7 @@ let jwtClient = new google.auth.JWT(
 
 jwtClient.authorize((_, tokens) => {
   // code to retrieve target userId and intent
-  let notif = { userNotification: { title: '<NOTIFICATION_TITLE>' },
+  let notif = { userNotification: { title: 'Title' },
     target: { userId: argv.id,
       intent: 'Daily content', // Expects a IETF BCP-47 language code (i.e. en-US)
       locale: 'en-US' } }
