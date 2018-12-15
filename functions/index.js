@@ -16,7 +16,7 @@ const {
 } = require('actions-on-google')
 
 const app = dialogflow({
-  clientId: '21528561101-n0f0kjosj2r5pbuo1hhproadvacblf77.apps.googleusercontent.com'
+  clientId: ''
 })
 
 app.intent('Default Welcome Intent', welcome)
