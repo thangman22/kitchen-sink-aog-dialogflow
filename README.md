@@ -5,9 +5,9 @@ I want to start this project because I did a lot of Action on google session I'm
 ### Requirement
 * Node.js 8+
 * [Firebase CLI](https://github.com/firebase/firebase-tools)
-* [ngrok] (https://ngrok.com/)
-* [Cloud function for firebase setup] (https://firebase.google.com/docs/functions/)
-* [Dialogflow account] (https://dialogflow.com/)
+* [ngrok](https://ngrok.com/)
+* [Cloud function for firebase setup](https://firebase.google.com/docs/functions/)
+* [Dialogflow account](https://dialogflow.com/)
 
 
 ### How to use
