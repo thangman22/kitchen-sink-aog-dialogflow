@@ -6,13 +6,12 @@ I want to start this project because I did a lot of Action on google session I'm
 * Node.js 8+
 * [Firebase CLI](https://github.com/firebase/firebase-tools)
 * [ngrok](https://ngrok.com/)
-* [Cloud function for firebase setup](https://firebase.google.com/docs/functions/)
 * [Dialogflow account](https://dialogflow.com/)
 
 
 ### How to use
-
-* Setup Dialogflow and import intent zip
+* Setup Dialogflow and import intent ZIP file
+* [Setup Cloud function for firebase](https://firebase.google.com/docs/functions/)
 * Serve Cloud Function for firebase in local
 * start ngrok with command `ngrok http 5000`
 * Setup "Fullfillment" in Dialogflow
