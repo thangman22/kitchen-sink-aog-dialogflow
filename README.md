@@ -10,10 +10,11 @@ I want to start this project because I did a lot of Action on google session I'm
 
 
 ### How to use
-* Setup Dialogflow and import intent ZIP file
-* [Setup Cloud function for firebase](https://firebase.google.com/docs/functions/)
-* Serve Cloud Function for firebase in local
-* start ngrok with command `ngrok http 5000`
-* Setup "Fullfillment" in Dialogflow
-* Run Emulator
+* Setup Dialogflow account create intent and import intent ZIP file. 
+* [Create Firebase Project](https://firebase.google.com/)
+* Setup Firebase project in local then add Cloud function to project.
+* Serve Cloud Function for firebase in local with command `yarn serve`.
+* start ngrok with command `ngrok http 5000`.
+* Setup "Fullfillment" in Dialogflow.
+* Try all feature with simmulator.
 
