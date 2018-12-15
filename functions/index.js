@@ -9,6 +9,7 @@ const permission = require('./lib/permission')
 const event = require('./lib/event')
 const dailyUpdate = require('./lib/dailyUpdate')
 const routineUpdate = require('./lib/routineUpdate')
+const config = require('./config.json')
 
 const {
   dialogflow,
@@ -16,7 +17,7 @@ const {
 } = require('actions-on-google')
 
 const app = dialogflow({
-  clientId: ''
+  clientId: config.clientId
 })
 
 app.intent('Default Welcome Intent', welcome)
