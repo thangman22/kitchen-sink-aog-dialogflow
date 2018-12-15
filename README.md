@@ -11,3 +11,10 @@ I want to start this project because I did a lot of Action on google session I'm
 
 
 ### How to use
+
+* Setup Dialogflow and import intent zip
+* Serve Cloud Function for firebase in local
+* start ngrok with command `ngrok http 5000`
+* Setup "Fullfillment" in Dialogflow
+* Run Emulator
+
