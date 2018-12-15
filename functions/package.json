@@ -16,7 +16,10 @@
     "consola": "^2.3.0",
     "dialogflow": "^0.1.0",
     "dialogflow-fulfillment": "^0.3.0-beta.3",
-    "firebase-functions": "^1.0.1"
+    "firebase-functions": "^1.0.1",
+    "googleapis": "^36.0.0",
+    "minimist": "^1.2.0",
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "eslint": "^5.6.0",

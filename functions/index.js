@@ -9,6 +9,7 @@ const permission = require('./lib/permission')
 const event = require('./lib/event')
 const dailyUpdate = require('./lib/dailyUpdate')
 const routineUpdate = require('./lib/routineUpdate')
+const notification = require('./lib/notification')
 const config = require('./config.json')
 
 const {
@@ -32,13 +33,14 @@ app.intent('Conversation with params', conversataionWithParams)
 app.intent('Conversation with params - yes', conversataionWithParamsYes)
 app.intent('Setup Daily update', dailyUpdate.setupDailyUpdate)
 app.intent('Setup Routine', routineUpdate.setupRoutine)
+app.intent('Setup Notification', notification.setupNotification)
 
 // intent for listen event
 app.intent('ask_for_permission_confirmation', event.confirmPermission)
 app.intent('ask_for_datetime_confirmation', event.confirmDatePermission)
 app.intent('ask_for_sign_in_confirmation', event.confirmSignIn)
 app.intent('actions_intent_NO_INPUT', event.noInput)
-app.intent('finish_update_setup', dailyUpdate.finish)
+app.intent('Finish Update Routine Setup', dailyUpdate.finish)
 
 function conversataionWithParams (conv, params) {
   console.log(params)
