@@ -2,7 +2,8 @@ const {
   Permission,
   DateTime,
   SignIn,
-  Place
+  Place,
+  Confirmation
 } = require('actions-on-google')
 
 exports.askForPermission = (conv) => {
@@ -12,6 +13,10 @@ exports.askForPermission = (conv) => {
     permissions: ['NAME', 'DEVICE_PRECISE_LOCATION']
   }
   conv.ask(new Permission(options))
+}
+
+exports.askForConfirmation = (conv) => {
+  conv.ask(new Confirmation('Can you confirm?'))
 }
 
 exports.askForDatePermission = (conv) => {

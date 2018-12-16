@@ -29,6 +29,7 @@ app.intent('Ask for Permission', permission.askForPermission)
 app.intent('Ask for Date', permission.askForDatePermission)
 app.intent('Ask for Place', permission.askForPlacePermission)
 app.intent('Ask for Sign in', permission.askForSignIn)
+app.intent('Ask for confirmation', permission.askForConfirmation)
 app.intent('This is cancel', cancel)
 app.intent('Conversation with params', conversataionWithParams)
 app.intent('Conversation with params - yes', conversataionWithParamsYes)
@@ -41,6 +42,7 @@ app.intent('ask_for_permission_confirmation', event.confirmPermission)
 app.intent('ask_for_datetime_confirmation', event.confirmDatePermission)
 app.intent('ask_for_place_confirmation', event.confirmPlacePermission)
 app.intent('ask_for_sign_in_confirmation', event.confirmSignIn)
+app.intent('ask_for_confirmation_confirmation', event.confirm)
 
 app.intent('actions_intent_NO_INPUT', event.noInput)
 app.intent('Finish Update Routine Setup', dailyUpdate.finish)
@@ -57,7 +59,7 @@ function conversataionWithParamsYes (conv, params) {
 
 function welcome (conv) {
   conv.ask('This is kitchen sink for Action on Google with Dialogflow')
-  conv.ask(new Suggestions(['Simple Response', 'Basic Card', 'Surface checking', 'Ask for Permission', 'Ask for Date', 'Ask for Place', 'Ask for Sign in', 'Can I get 1 ice tea', 'Daily content']))
+  conv.ask(new Suggestions(['Simple Response', 'Basic Card', 'Surface checking', 'Ask for Permission', 'Ask for Date', 'Ask for Place', 'Ask for Sign in', 'Ask for confirmation', 'Can I get 1 ice tea', 'Daily content']))
 
   // Save to user storage
   conv.user.storage.count = 1

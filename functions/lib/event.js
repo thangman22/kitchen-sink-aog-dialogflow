@@ -39,10 +39,14 @@ exports.confirmSignIn = (conv, _, signin) => {
 exports.noInput = (conv) => {
   const repromptCount = parseInt(conv.arguments.get('REPROMPT_COUNT'))
   if (repromptCount === 0) {
-    conv.ask(`What was that?`)
+    return conv.ask(`What was that?`)
   } else if (repromptCount === 1) {
-    conv.ask(`Sorry I didn't catch that. Could you repeat yourself?`)
+    return conv.ask(`Sorry I didn't catch that. Could you repeat yourself?`)
   } else if (conv.arguments.get('IS_FINAL_REPROMPT')) {
-    conv.close(`Okay let's try this again later.`)
+    return conv.close(`Okay let's try this again later.`)
   }
+}
+
+exports.confirm = (conv, _, confirmationGranted) => {
+  return conv.ask(confirmationGranted ? 'Wonderful' : 'Maybe next time')
 }
