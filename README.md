@@ -19,3 +19,6 @@ I want to start this project because I did a lot of Action on google session I'm
 * Setup "Fullfillment" in Dialogflow.
 * Try all feature with simmulator.
 
+### How to Setup update / Routine
+
+### How to setup Notification

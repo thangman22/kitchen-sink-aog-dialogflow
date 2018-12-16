@@ -1,7 +1,8 @@
 const {
   Permission,
   DateTime,
-  SignIn
+  SignIn,
+  Place
 } = require('actions-on-google')
 
 exports.askForPermission = (conv) => {
@@ -22,6 +23,14 @@ exports.askForDatePermission = (conv) => {
     }
   }
   conv.ask(new DateTime(options))
+}
+
+exports.askForPlacePermission = (conv) => {
+  const options = {
+    context: 'To find a place to pick you up',
+    prompt: 'Where would you like to be picked up?'
+  }
+  conv.ask(new Place(options))
 }
 
 exports.askForSignIn = (conv) => {
