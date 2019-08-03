@@ -20,5 +20,20 @@ I want to start this project because I did a lot of Action on google session I'm
 * Try all feature with simmulator.
 
 ### How to Setup update / Routine
+* Go to https://console.actions.google.com/project/[project-id]/actions/
+* Click `Setup Routine` action
+* Go to `User engagement` section
+* Enable `Would you like to let users add this Action to Google Assistant Routines?` 
 
 ### How to setup Notification
+* Go to https://console.actions.google.com/project/[project-id]/actions/
+* Click `Setup Notification` action
+* Go to `User engagement` section
+* Enable `Would you like to send push notifications? If yes, user permission will be needed?` 
+
+### How to setup Daily Update
+* Go to https://console.actions.google.com/project/[project-id]/actions/
+* Click `Daily content` action
+* Go to `User engagement` section
+* Enable `Would you like to offer daily updates to users?` 
+* Enable `Would you like to send push notifications? If yes, user permission will be needed.` 

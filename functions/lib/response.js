@@ -2,7 +2,9 @@ const {
   SimpleResponse,
   BasicCard,
   Button,
-  Image
+  Image,
+  BrowseCarousel,
+  BrowseCarouselItem
 } = require('actions-on-google')
 
 exports.simpleResponse = (conv) => {
@@ -28,9 +30,45 @@ exports.basicCard = (conv) => {
       url: 'https://assistant.google.com/'
     }),
     image: new Image({
-      url: 'https://example.com/image.png',
+      url: 'https://developers.google.com/actions/images/badges/XPM_BADGING_GoogleAssistant_VER.png',
       alt: 'Image alternate text'
     }),
     display: 'CROPPED'
+  }))
+}
+
+exports.browseCarousel = (conv) => {
+  const a11yText = 'Google Assistant Bubbles'
+  const googleUrl = 'https://google.com'
+  if (!conv.surface.capabilities.has('actions.capability.SCREEN_OUTPUT')) {
+    conv.ask('Sorry, try this on a screen device or select the ' +
+    'phone surface in the simulator.')
+    return
+  }
+  // Create a browse carousel
+  conv.ask('This is BrowseCarousel')
+  conv.ask(new BrowseCarousel({
+    items: [
+      new BrowseCarouselItem({
+        title: 'Title of item 1',
+        url: googleUrl,
+        description: 'Description of item 1',
+        image: new Image({
+          url: 'https://developers.google.com/actions/images/badges/XPM_BADGING_GoogleAssistant_VER.png',
+          alt: a11yText
+        }),
+        footer: 'Item 1 footer'
+      }),
+      new BrowseCarouselItem({
+        title: 'Title of item 2',
+        url: googleUrl,
+        description: 'Description of item 2',
+        image: new Image({
+          url: 'https://developers.google.com/actions/images/badges/XPM_BADGING_GoogleAssistant_VER.png',
+          alt: a11yText
+        }),
+        footer: 'Item 2 footer'
+      })
+    ]
   }))
 }
